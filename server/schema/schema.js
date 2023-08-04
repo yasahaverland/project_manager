@@ -1,6 +1,10 @@
 const { projects, clients } = require('../sampleData')
 const { GraphQLObjectType, GraphQLID, GraphQLString, GraphQLSchema, GraphQLList } = require('graphql')
 
+// Mongoose models
+const Project = require('../models/Project')
+const Client = require('../models/Client')
+
 
 // client type
 const ClientType = new GraphQLObjectType({
